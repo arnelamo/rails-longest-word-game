@@ -12,7 +12,6 @@ class GamesController < ApplicationController
     @start_time = Time.parse(params[:start_time])
     @end_time = Time.now
     @output = run_game(@attempt, @grid, @start_time, @end_time)
-    # byebug
   end
 end
 
